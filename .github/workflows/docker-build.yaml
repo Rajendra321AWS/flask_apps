@@ -1,20 +1,24 @@
-name: Build Docker Image
+# name: Build Docker Image
 
-on:
-  push:
-    branches:
-      - main
+# on:
+#   push:
+#     branches:
+#       - main
 
-jobs:
-  docker:
-    runs-on: ubuntu-latest
+# permissions:
+#   contents: read
+#   packages: write
 
-    steps:
-      # Step 1: Checkout source code
-      - name: Checkout code
-        uses: actions/checkout@v4
+# jobs:
+#   Build-and-push:
+#     runs-on: ubuntu-latest
 
-      # Step 2: Build Docker image
-      - name: Build Docker image
-        run: |
-          docker build -t flask-app .
+#     steps:
+#       # Step 1: Checkout source code
+#       - name: Checkout code
+#         uses: actions/checkout@v4ls
+
+#       # Step 2: Build Docker image
+#       - name: Build Docker image
+#         run: |
+#           docker build -t flask-app .
